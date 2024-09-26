@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - 'main'
+
+concurrency:
+  group: main-workflow
+  cancel-in-progress: false
+
 jobs:
   test:
     uses: './.github/workflows/test.yml'
@@ -49,7 +54,7 @@ jobs:
 
       - name: 'Build'
         run: pnpm build
-        
+
       - name: 'Rebuild README.md'
         run: 'node dist/scripts/buildReadme.js'
 
@@ -60,7 +65,7 @@ jobs:
 
       - name: Display .markdownlint.json
         run: cat .markdownlint.json
-  
+
       - name: Check if commit was made by GitHub Actions
         id: check_commit
         run: |
@@ -82,16 +87,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          git pull origin main
           git push origin main
 
       - name: 'Upload markdown metadata to db'
-        env: 
+        env:
           CODEBASE_KB_API_KEY: ${{ secrets.CODEBASE_KB_API_KEY }}
           BASE_API_URL: ${{ secrets.BASE_API_URL }}
         run: node dist/scripts/getSnippet.js
 
       - name: 'Check and sync deleted files to db'
-        env: 
+        env:
           CODEBASE_KB_API_KEY: ${{ secrets.CODEBASE_KB_API_KEY }}
           BASE_API_URL: ${{ secrets.BASE_API_URL }}
         run: node dist/scripts/syncDeletedFiles.js
