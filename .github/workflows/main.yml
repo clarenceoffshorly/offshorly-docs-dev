@@ -87,7 +87,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git config pull.ff only
+          git pull --ff-only
           git push origin main
 
       - name: 'Upload markdown metadata to db'
