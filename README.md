@@ -87,6 +87,10 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [How to print in JavaScript](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/How%20to%20print%20in%20JavaScript%20(8b9cdf19-2afb-4b31-9654-46ae5bfff857).md)
 
+- [loop in js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/loop%20in%20js%20(5313e538-0700-400b-b971-4b3889935626).md)
+
+- [print js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/print%20js%20(ad6a3fc3-ab3a-4129-9da6-f268a68a8c90).md)
+
 #### Packages
 
 - [zod](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Packages/zod.md)
