@@ -45,6 +45,12 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 ### Table of Contents
 
+#### C\#
+
+##### _Web_
+
+- [Print in C#](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/C#/Web/Print%20in%20C#%20(74d2fdc6-588b-4805-8423-204dd562b056).md)
+
 #### Cloud
 
 ##### _AWS_
@@ -71,6 +77,20 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [Print in Java](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Java/AI/Print%20in%20Java%20(7ca999d6-e61a-4395-8904-e797d10dbbd5).md)
 
+##### _Web_
+
+- [print java](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Java/Web/print%20java%20(1517effa-e2a4-407c-9746-0cb0f5d9d39a).md)
+
+#### JavaScript
+
+##### _Web_
+
+- [How to print in JavaScript](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/How%20to%20print%20in%20JavaScript%20(8b9cdf19-2afb-4b31-9654-46ae5bfff857).md)
+
+- [loop in js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/loop%20in%20js%20(5313e538-0700-400b-b971-4b3889935626).md)
+
+- [print js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/print%20js%20(ad6a3fc3-ab3a-4129-9da6-f268a68a8c90).md)
+
 #### Packages
 
 - [zod](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Packages/zod.md)
@@ -92,6 +112,12 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 - [Setting Up a Full-Stack Application with MERN](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Project/Setting%20Up%20a%20Full-Stack%20Application%20with%20MERN.md)
 
 #### Python
+
+##### _AI_
+
+- [Authentication in Fast API](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Python/AI/Authentication%20in%20Fast%20API%20(2d561039-980c-4897-b1f5-fbc69f42875f).md)
+
+- [Authentication in Flask](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Python/AI/Authentication%20in%20Flask%20(d7611187-7f84-482b-8f61-d484b4eaf3ca).md)
 
 ##### _ai_generated_
 
@@ -120,4 +146,9 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 - [test](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Test/test.md)
 
 - [test_security](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Test/test_security.md)
+
+#### placeholder
+
+- [test](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/placeholder/test.md)
+- [placeholder_test](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/placeholder_test.md)
   
