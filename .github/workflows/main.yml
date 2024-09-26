@@ -55,6 +55,16 @@ jobs:
       - name: 'Build'
         run: pnpm build
 
+      - name: Checkout main branch
+        run: |
+          git checkout main
+
+      - name: Pull latest changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git pull --rebase origin main || exit 0  # Use --rebase to avoid merge commits
+
       - name: 'Rebuild README.md'
         run: 'node dist/scripts/buildReadme.js'
 
@@ -87,7 +97,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          git pull origin main
           git push origin main
 
       - name: 'Upload markdown metadata to db'
