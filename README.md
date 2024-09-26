@@ -133,6 +133,10 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 ##### _Web_
 
+- [V1 python](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Python/Web/V1%20python%20(b0ad485c-ae93-4ccd-a163-40d65f0d6de9).md)
+
+- [V2 Python](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Python/Web/V2%20Python%20(61454145-ef65-4b65-98dd-e1f7394fd86e).md)
+
 - [print v1 python](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Python/Web/print%20v1%20python%20(2db51ed0-2ab6-41f9-a7f8-620989196a5f).md)
 
 - [print v2 python](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Python/Web/print%20v2%20python%20(7dab8e7f-3304-4323-9f5c-0f031cdcf392).md)
