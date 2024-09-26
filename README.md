@@ -77,6 +77,10 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [Print in Java](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Java/AI/Print%20in%20Java%20(7ca999d6-e61a-4395-8904-e797d10dbbd5).md)
 
+##### _Web_
+
+- [print java](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Java/Web/print%20java%20(1517effa-e2a4-407c-9746-0cb0f5d9d39a).md)
+
 #### JavaScript
 
 ##### _Web_
