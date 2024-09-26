@@ -95,6 +95,10 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [print js new](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/print%20js%20new%20(6925cf84-17e9-4b65-8a1e-b63209283120).md)
 
+- [v1 js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/v1%20js%20(3f8743ff-1802-45d3-8438-6cc60cebfe0a).md)
+
+- [v2 js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/v2%20js%20(205f1e02-8e9a-43b6-add6-8af106724133).md)
+
 #### Packages
 
 - [zod](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Packages/zod.md)
