@@ -148,7 +148,7 @@ async function main() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${apiKey}`, // add API key here
+          'x-api-key': `${apiKey}`, // add API key here
         },
         body: JSON.stringify(output),
       },
