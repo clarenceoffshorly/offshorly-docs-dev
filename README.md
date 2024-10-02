@@ -51,19 +51,19 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [Print in C#](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/C#/Web/Print%20in%20C#%20(74d2fdc6-588b-4805-8423-204dd562b056).md)
 
-#### CLOUD
+#### Cloud
 
 ##### _AWS_
 
 - [AWS lambda](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Cloud/AWS/AWS%20lambda.md)
 
-#### COBOL
+#### Cobol
 
 ##### _AI_
 
 - [Print in Cobol](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Cobol/AI/Print%20in%20Cobol%20(52a3a887-57f6-4a8b-991f-04422abc7b67).md)
 
-#### DATABASE
+#### Database
 
 ##### _Prisma_
 
@@ -71,7 +71,7 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [setup](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Database/Prisma/setup.md)
 
-#### JAVA
+#### Java
 
 ##### _AI_
 
@@ -81,7 +81,7 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [print java](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Java/Web/print%20java%20(1517effa-e2a4-407c-9746-0cb0f5d9d39a).md)
 
-#### JAVASCRIPT
+#### JavaScript
 
 ##### _Web_
 
@@ -105,11 +105,11 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [v2 js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/v2%20js%20(205f1e02-8e9a-43b6-add6-8af106724133).md)
 
-#### PACKAGES
+#### Packages
 
 - [zod](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Packages/zod.md)
 
-#### PROJECT
+#### Project
 
 - [Authentication in Express](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Project/Authentication%20in%20Express.md)
 
@@ -125,7 +125,7 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [Setting Up a Full-Stack Application with MERN](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Project/Setting%20Up%20a%20Full-Stack%20Application%20with%20MERN.md)
 
-#### PYTHON
+#### Python
 
 ##### _AI_
 
@@ -157,13 +157,13 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [For Loop in Python](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Python/web_entry/For%20Loop%20in%20Python%20(4ddbd0b0-004b-4bf2-9e6a-76f12aa4a208).md)
 
-#### RUBY
+#### Ruby
 
 ##### _AI_
 
 - [Print in Ruby](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Ruby/AI/Print%20in%20Ruby%20(b508a80c-07ec-4c9a-ba06-efe981c2168e).md)
 
-#### TEST
+#### Test
 
 - [firebase_with_github_auth](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Test/firebase_with_github_auth.md)
 
@@ -177,7 +177,7 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [test_security](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/Test/test_security.md)
 
-#### PLACEHOLDER
+#### placeholder
 
 - [test](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/placeholder/test.md)
 - [placeholder_test](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/placeholder_test.md)
