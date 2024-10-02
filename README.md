@@ -95,6 +95,8 @@ Note: **DO NOT COMMIT THE README FILE**. The readme file will be overwritten onc
 
 - [old print js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/old%20print%20js%20(41ce007b-2614-4627-b79e-42a9f8d2846c).md)
 
+- [print js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/print%20js%20(704f1249-8d7e-4def-99e2-e81dc9fb0dfe).md)
+
 - [print js](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/print%20js%20(ad6a3fc3-ab3a-4129-9da6-f268a68a8c90).md)
 
 - [print js new](https://github.com/jasonoffshorlydev/offshorly-docs/tree/main/content/JavaScript/Web/print%20js%20new%20(6925cf84-17e9-4b65-8a1e-b63209283120).md)
