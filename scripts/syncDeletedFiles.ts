@@ -8,7 +8,7 @@ async function syncDeletedFiles(paths: string[]) {
       method: 'DELETE',
       headers: { 
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`
+        'x-api-key': `${apiKey}`
        },
       body: JSON.stringify({ paths }),
     })
