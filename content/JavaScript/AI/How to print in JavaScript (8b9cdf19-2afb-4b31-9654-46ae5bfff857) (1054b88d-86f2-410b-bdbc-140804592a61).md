@@ -1,0 +1,153 @@
+# Authentication in Spring Boot #
+
+Spring Boot provides robust support for implementing authentication in your applications. This guide covers the basics of setting up authentication using Spring Security.
+
+1. Add Spring Security dependency to your `pom.xml`:
+
+   ```xml
+   <dependency>
+       <groupId>org.springframework.boot</groupId>
+       <artifactId>spring-boot-starter-security</artifactId>
+   </dependency>
+   ```
+
+2. Create a basic security configuration:
+
+   ```java
+   import org.springframework.context.annotation.Bean;
+   import org.springframework.context.annotation.Configuration;
+   import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+   import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+   import org.springframework.security.web.SecurityFilterChain;
+
+   @Configuration
+   @EnableWebSecurity
+   public class SecurityConfig {
+
+       @Bean
+       public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+           http
+               .authorizeHttpRequests((requests) -> requests
+                   .requestMatchers("/", "/home").permitAll()
+                   .anyRequest().authenticated()
+               )
+               .formLogin((form) -> form
+                   .loginPage("/login")
+                   .permitAll()
+               )
+               .logout((logout) -> logout.permitAll());
+
+           return http.build();
+       }
+   }
+   ```
+
+3. Implement a custom UserDetailsService:
+
+   ```java
+   import org.springframework.security.core.userdetails.UserDetails;
+   import org.springframework.security.core.userdetails.UserDetailsService;
+   import org.springframework.security.core.userdetails.UsernameNotFoundException;
+   import org.springframework.stereotype.Service;
+
+   @Service
+   public class CustomUserDetailsService implements UserDetailsService {
+
+       @Override
+       public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+           // Implement user lookup logic here
+           // Return a UserDetails object or throw UsernameNotFoundException
+       }
+   }
+   ```
+
+4. Configure authentication in your security configuration:
+
+   ```java
+   import org.springframework.beans.factory.annotation.Autowired;
+   import org.springframework.context.annotation.Bean;
+   import org.springframework.security.authentication.AuthenticationManager;
+   import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+   import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+
+   @Configuration
+   @EnableWebSecurity
+   public class SecurityConfig {
+
+       @Autowired
+       private CustomUserDetailsService userDetailsService;
+
+       @Bean
+       public AuthenticationManager authenticationManager(HttpSecurity http) throws Exception {
+           return http.getSharedObject(AuthenticationManagerBuilder.class)
+               .userDetailsService(userDetailsService)
+               .passwordEncoder(passwordEncoder())
+               .and()
+               .build();
+       }
+
+       @Bean
+       public PasswordEncoder passwordEncoder() {
+           return new BCryptPasswordEncoder();
+       }
+
+       // ... other configurations
+   }
+   ```
+
+5. Create a login form (login.html):
+
+   ```html
+   <!doctype html>
+   <html
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:th="https://www.thymeleaf.org"
+   >
+     <head>
+       <title>Login</title>
+     </head>
+     <body>
+       <h1>Login</h1>
+       <form th:action="@{/login}" method="post">
+         <div>
+           <input type="text" name="username" placeholder="Username" />
+         </div>
+         <div>
+           <input type="password" name="password" placeholder="Password" />
+         </div>
+         <input type="submit" value="Log in" />
+       </form>
+     </body>
+   </html>
+   ```
+
+6. Secure your endpoints using annotations:
+
+   ```java
+   import org.springframework.security.access.prepost.PreAuthorize;
+   import org.springframework.web.bind.annotation.GetMapping;
+   import org.springframework.web.bind.annotation.RestController;
+
+   @RestController
+   public class SecuredController {
+
+       @GetMapping("/api/public")
+       public String publicEndpoint() {
+           return "This is a public endpoint";
+       }
+
+       @PreAuthorize("hasRole('USER')")
+       @GetMapping("/api/user")
+       public String userEndpoint() {
+           return "This is a user endpoint";
+       }
+
+       @PreAuthorize("hasRole('ADMIN')")
+       @GetMapping("/api/admin")
+       public String adminEndpoint() {
+           return "This is an admin endpoint";
+       }
+   }
+   ```
+
+This markdown provides a basic setup for authentication in Spring Boot using Spring Security. Remember to customize the implementation based on your specific requirements and security needs.
